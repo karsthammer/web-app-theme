@@ -45,7 +45,6 @@ Gem::Specification.new do |s|
      "lib/generators/web_app_theme/themed/templates/view_form.html.erb",
      "lib/generators/web_app_theme/themed/templates/view_new.html.erb",
      "lib/generators/web_app_theme/themed/templates/view_show.html.erb",
-     "lib/generators/web_app_theme/themed/templates/view_sidebar.html.erb",
      "lib/generators/web_app_theme/themed/templates/view_signin.html.erb",
      "lib/generators/web_app_theme/themed/templates/view_signup.html.erb",
      "lib/generators/web_app_theme/themed/templates/view_tables.html.erb",
