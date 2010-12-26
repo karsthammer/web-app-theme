@@ -1,6 +1,7 @@
 <% simple_form_mapping = {
 	:text_field => "string",
-	:text_area => "text"
+	:text_area => "text",
+	:check_box => "boolean"
 } -%>
 <% columns.each do |column| %>
 	<%%= f.input :<%= column.name %>, :as => :<%= simple_form_mapping[column.field_type] %>, :label_html => { :class => :label }, :input_html => { :class => '<%= column.field_type %>' } %>
@@ -11,5 +12,5 @@
     <%%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%%= t("web-app-theme.save", :default => "Save") %>
   </button>
   <span class="text_button_padding"><%%= t("web-app-theme.or", :default => "or") %></span>
-	<%%= link_to t("web-app-theme.cancel", :default => "Cancel"), <%= controller_routing_path %>_path, :class => "text_button_padding link_button" %>
+  <%%= link_to t("web-app-theme.cancel", :default => "Cancel"), <%= controller_routing_path %>_path, :class => "text_button_padding link_button" %>
 </div>
