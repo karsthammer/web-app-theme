@@ -1,5 +1,5 @@
 <% columns.each do |column| %>
-	<%%= f.input :<%= column.name %>, :label_html => { :class => :label }, :input_html => { :class => '<%= column.field_type %>' } %>
+	<%%= f.input :<%= column.name %>, :as => :<%= column.field_type %>, :label_html => { :class => :label }, :input_html => { :class => '<%= column.field_type %>' } %>
 <%- end -%>
 
 <div class="group navform wat-cf">
