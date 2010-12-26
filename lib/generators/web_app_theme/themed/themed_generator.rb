@@ -97,11 +97,11 @@ module WebAppTheme
           'view_edit.html.erb'    => File.join('app/views', @controller_file_path, "edit.html.#{options.engine}"),
           'view_form.html.erb'    => File.join('app/views', @controller_file_path, "_form.html.#{options.engine}"),
           'view_show.html.erb'    => File.join('app/views', @controller_file_path, "show.html.#{options.engine}"),
-          'view_sidebar.html.erb' => File.join('app/views', @controller_file_path, "_sidebar.html.#{options.engine}")
+          # 'view_sidebar.html.erb' => File.join('app/views', @controller_file_path, "_sidebar.html.#{options.engine}")
         },
         'text' => {
           'view_text.html.erb'    => File.join('app/views', @controller_file_path, "show.html.#{options.engine}"),
-          'view_sidebar.html.erb' => File.join('app/views', @controller_file_path, "_sidebar.html.#{options.engine}")
+          # 'view_sidebar.html.erb' => File.join('app/views', @controller_file_path, "_sidebar.html.#{options.engine}")
         }
       }
       selected_views = views[options.themed_type]
